@@ -65,8 +65,10 @@ update:
 ```ruby
 post = Post.first
 post.save
-post.transcribe user: current_user, view_name: 'test', action_name: 'posts#update', crud_name: 'update'
 post.audits #=> [#<Audit::AuditLog>, #<Audit::AuditLog>]
+
+post.transcribe user: current_user, view_name: 'test', action_name: 'posts#update', crud_name: 'update'
+post.audits #=> [#<Audit::AuditLog>, #<Audit::AuditLog>, #<Audit::AuditLog>]
 ```
 
 destroy:
@@ -74,6 +76,6 @@ destroy:
 ```ruby
 post = Post.first
 post.destroy
-post.audits #=> [#<Audit::AuditLog>, #<Audit::AuditLog>, #<Audit::AuditLog>]
+post.audits #=> [#<Audit::AuditLog>, #<Audit::AuditLog>, #<Audit::AuditLog>, #<Audit::AuditLog>]
 ```
 
