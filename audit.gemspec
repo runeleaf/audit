@@ -7,9 +7,9 @@ require "audit/version"
 Gem::Specification.new do |s|
   s.name          = "audit"
   s.version       = Audit::VERSION
-  s.authors       = ["TODO: Your name"]
-  s.email         = ["TODO: Your email"]
-  s.homepage      = ""
+  s.authors       = ["RAWHIDE. Co., Ltd."]
+  s.email         = ["info@raw-hide.co.jp"]
+  s.homepage      = "https://github.com/runeleaf/audit"
   s.summary       = "Summary of Audit."
   s.description   = "Description of Audit."
 
